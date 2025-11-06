@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanay UJ — Portfolio</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071029 0%, #0b1320 100%);color:#e6eef6;line-height:1.45}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:120px;height:120px;border-radius:16px;overflow:hidden;flex:0 0 120px;background:linear-gradient(90deg,var(--accent),#5eead4);display:flex;align-items:center;justify-content:center}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin-top:18px;backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .avatar{width:96px;height:96px;flex:0 0 96px}}
+    .intro p{margin:0 0 12px 0;color:#dbeafe}
+    .cta{display:flex;gap:12px;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--accent);color:#052025;text-decoration:none;font-weight:600}
+    .secondary{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);color:var(--muted);text-decoration:none}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:var(--glass);padding:6px 10px;border-radius:8px;color:#cfeef3;font-weight:600}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">
+        <!-- Replace the src below with your photo (square works best) -->
+        <img src="IMG_5809.HEIC" alt="Sanay UJ">
+      </div>
+      <div>
+        <h1>Sanay UJ</h1>
+        <div class="subtitle">Engineer student at Lovely Professional University, Punjab</div>
+        <div class="meta">MERN stack developer • Web enthusiast • Open to internships & projects</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card intro">
+          <h2 style="margin-top:0">About</h2>
+          <p>Hi — I'm <strong>Sanay UJ</strong>, an engineering student at <strong>Lovely Professional University, Punjab</strong>. I code primarily with the MERN stack (MongoDB, Express, React, Node.js). I enjoy building responsive web apps, learning systems design, and improving my full-stack skills.</p>
+          <p>Currently studying engineering and working on personal projects to strengthen problem solving, web development, and software engineering fundamentals.</p>
+
+          
+        </section>
+
+        <section class="card" id="projects">
+          <h2 style="margin-top:0">Projects</h2>
+          <ul style="margin:0;padding-left:18px">
+            <li><strong>Portfolio Website</strong> — A personal website built with React and Tailwind.</li>
+            <li><strong>Chat App</strong> — Real-time chat using Socket.io and Node.js.</li>
+            <li><strong>Task Manager</strong> — CRUD app with authentication using JWT.</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2 style="margin-top:0">Skills</h2>
+          <ul class="skills">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Brief</h3>
+          <p style="margin:0 0 8px 0;color:#dbeafe">Engineer student focusing on web development and practical projects. Open to internships, collaboration, and freelance work.</p>
+          <div class="meta">Based in Punjab, India</div>
+          <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)">
+          <div>
+            <strong>Contact</strong>
+            <div class="meta">Email: <a href="mailto:sanay@example.com">sanay@example.com</a></div>
+            <div class="meta">LinkedIn: <a href="#" style="color:var(--accent)">linkedin.com/in/sanay</a></div>
+          </div>
+        </div>
+
+        
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ • Replace the photo and contact details with your own.
+    </footer>
+  </div>
+</body>
+</html>
